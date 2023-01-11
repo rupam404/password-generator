@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/da084d249e.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    #container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 8px;
+      width: 400px;
+      height: 475px;
+      background-image: linear-gradient(rgba(35, 15, 124, 0.89),rgb(19, 21, 156));
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      border: 1px solid white;
+      font-size: 20px;
+      height: 50px;
+      color: white;
+    }
+    #div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+    }
+    .section{
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-weight: bold;
+      
+    }
+   
+    .button{
+      padding: 7px;
+      width: 150px;
+      color: rgb(16, 16, 170);
+      font-weight: bold;
+      border: none;
+      border-radius: 2px;
+      
+    }
+    #wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #icon{
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 48px;
+     border: 1px solid white;
+     color: white;
+     padding: 1px;
+     width: 20px;
+     border-left: none;
+     
+    }
+    #icon:hover{
+      cursor: pointer;
+    }
+    #header2{
+      text-align: center;
+      margin-top: 40px;
+      color: white;
+    }
+    .button:hover{
+      background-color: rgb(27, 140, 233);
+      color: white;
+      border: none;
+    }
+    @media screen and (max-width:600px) {
+      #container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+       border: none;
+       border-radius: 4px;
+      width: 350px;
+      height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      border: 1px solid white;
+      font-size: 20px;
+      height: 40px;
+    }
+    .section{
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    #div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+    }
+    #header2{
+      text-align: center;
+      color: white;
+    }
+    #icon{
+      height: 37px;
+    }
+    }
+  </style>
+  <body>
+  <div id="div">
+  <div id="container">
+      
+    <h1 id="header2">Password Generator</h1>
+
+    <div id="wrapper">
+    <h1 id="header"></h1>
+    <div id="icon"><i class="fa-sharp fa-solid fa-clipboard"></i></div>   
+    </div>
+
+    <div class="section">
+    <label>Uppercase Letter</label>
+    <input type="checkbox" id="uppercasealphabets">
+    </div>
+    </br>
+
+    <div class="section">
+      <label>Lowercase Letter</label>
+      <input type="checkbox" id="alphabets">
+      </div>
+      </br>
+
+    <div class="section">
+    <label>Numbers</label>
+    <input type="checkbox" id="numbers">
+    </div>
+    </br>
+
+    <div class="section">
+    <label>Symbols</label>
+    <input type="checkbox" id="symbols">
+    </div>
+    </br>
+
+   <div class="section">
+   <label>Password Length</label>
+   <input type="range" id="length" min="0" max="20" >
+   </div>
+   </br></br>
+
+  <button id="generate" class="button">Generate Password</button>
+  </br>
+  <button id="reset" class="button">Reset</button>
+  </br>
+  </div>
+  </div>
+   
+  </body>
+  <script src="./index.js"></script>
+</html>
